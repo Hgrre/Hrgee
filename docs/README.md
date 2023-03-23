@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: 林息の个人博客
+heroText: Hrgeeの个人博客
 tagline: 一个基于 VuePress 的个人博客
 actionText: 如何搭建 →
 actionLink: /handbook/1/
