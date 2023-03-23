@@ -2,7 +2,7 @@
 home: true
 heroText: Hrgeeの个人博客
 tagline: 一个基于 VuePress 的个人博客
-actionText: 如何搭建 →
+actionText: 欢迎来到有趣的world →
 actionLink: /handbook/1/
 features:
 - title: 简洁至上
