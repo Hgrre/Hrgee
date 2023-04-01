@@ -22,22 +22,16 @@ module.exports = {
             {
                   title: "基础学习",
                   path: '/handbook/1',
-                  title:"内容",
-                  path: '/handbook/3',
                   collapsable: true, // 是否折叠
                   children: [
                     { title: "CTF：攻防世界", path: "/handbook/1" },
-                    { title: "Python笔记", path: "/handbook/2" }
-                    // { title: "博客搭建", path: "/handbook/3" }
                   ],
                 },
                 {
-                      title: "Python笔记",
-                      path: '/handbook/3',
+                      title: "Python基础",
                       path: '/handbook/3',
                       collapsable: true, // 是否折叠
                       children: [
-                        { title: "CTF：攻防世界", path: "/handbook/1" },
                         { title: "Python笔记", path: "/handbook/2" }
                         // { title: "博客搭建", path: "/handbook/3" }
                       ],
