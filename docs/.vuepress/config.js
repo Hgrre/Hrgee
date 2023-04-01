@@ -29,7 +29,7 @@ module.exports = {
                 },
                 {
                       title: "Python基础",
-                      path: '/handbook/3',
+                      path: '/handbook/2',
                       collapsable: true, // 是否折叠
                       children: [
                         { title: "Python笔记", path: "/handbook/2" }
