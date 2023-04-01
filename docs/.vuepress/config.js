@@ -20,7 +20,7 @@ module.exports = {
                     ]
                 },
             {
-                  title: "基础学习",
+                  title: "CTF-WP",
                   path: '/handbook/1',
                   collapsable: true, // 是否折叠
                   children: [
