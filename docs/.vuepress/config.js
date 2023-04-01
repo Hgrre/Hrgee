@@ -1,6 +1,6 @@
 module.exports = {
-        base: '/Hrgee/', // 这个路径名称就是你刚才所配置的项目名！！！，斜杠不能漏！！！
-        themeConfig: {
+        base: '/Hrgee/', // 这个路径名称就是你刚才所配置的项目名！！！，斜杠不能漏！！！
+         themeConfig: {
             nav: [
                 { text: '首页', link: '/' },
                 {
@@ -19,7 +19,7 @@ module.exports = {
                         { title: "博客介绍", path: "/" }
                     ]
                 },
-                {
+            {
                   title: "基础学习",
                   path: '/handbook/1',
                   title:"内容",
