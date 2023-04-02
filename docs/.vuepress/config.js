@@ -24,7 +24,10 @@ module.exports = {
                   path: '/handbook/1',
                   collapsable: true, // 是否折叠
                   children: [
-                    { title: "CTF：攻防世界", path: "/handbook/1" },
+                    { title: "图片隐写", path: "/handbook/1" },
+                    { title: "密码学", path: "/handbook/3" },
+                    { title: "流量分析", path: "/handbook/4" },
+                    { title: "Web", path: "/handbook/5" },
                   ],
                 },
                 {
