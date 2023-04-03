@@ -27,7 +27,7 @@ module.exports = {
                     { title: "图片隐写", path: "/handbook/1" },
                     { title: "密码学", path: "/handbook/3" },
                     { title: "流量分析", path: "/handbook/4" },
-                    { title: "Web", path: "/handbook/5" },
+                //     { title: "", path: "/handbook/5" },
                   ],
                 },
                 {
@@ -38,7 +38,19 @@ module.exports = {
                         { title: "Python笔记", path: "/handbook/2" }
                         // { title: "博客搭建", path: "/handbook/3" }
                       ],
-                    }
+                    },
+
+                {
+                      title: "Linux基础",
+                      path: '/handbook/5',
+                      collapsable: true, // 是否折叠
+                      children: [
+                        { title: "Python笔记", path: "/handbook/5" }
+                        // { title: "博客搭建", path: "/handbook/3" }
+                       ],
+                      }
+
+
               ]
         }
     }
