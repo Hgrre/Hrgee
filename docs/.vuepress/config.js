@@ -25,10 +25,10 @@ module.exports = {
                  collapsable: true, // 是否折叠
                  children: [
                 { title: "图片隐写", path: "/handbook/图片隐写" },
-                { title: "密码学", path: "/handbook/密码学" },
-                { title: "流量分析", path: "/handbook/流量分析" },
-                { title: "web", path: "/handbook/web" },
-                //     { title: "", path: "/handbook/5" },
+                // { title: "密码学", path: "/handbook/密码学" },
+                // { title: "流量分析", path: "/handbook/流量分析" },
+                // { title: "web", path: "/handbook/web" },
+                // { title: "", path: "/handbook/5" },
                   ],
                 },
                 {
