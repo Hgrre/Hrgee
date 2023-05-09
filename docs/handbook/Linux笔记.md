@@ -44,22 +44,12 @@
 
 
 
-# SSH基础、
+# SSH基础
 
 ![Img](https://rtyu-1317440738.cos.ap-guangzhou.myqcloud.com/202305091956294.webp)
 
 
-
-
-
  
 ![Img](https://rtyu-1317440738.cos.ap-guangzhou.myqcloud.com/202305091956720.webp)
-
-
-
-
-
-
- 
 
 
