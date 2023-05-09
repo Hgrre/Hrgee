@@ -28,6 +28,7 @@
 ```C
 // --run--
 int a = printf("Hello world\r\n");
+
 printf("%d\r\n", a);
 ```
 >运行结果是：`Hello world`, `14`
@@ -36,17 +37,22 @@ printf("%d\r\n", a);
 ```C
 例如：
 int nStudentCount = 0;
-float fStudentCount = 0.0f
-double dblStudentCount = 0.0;
-char cStudengCount = '\0';
-short int snStudengCount = 0;
-int *pnStudengCount = NULL;
 
+float fStudentCount = 0.0f;
+
+double dblStudentCount = 0.0;
+
+char cStudengCount = '\0';
+
+short int snStudengCount = 0;
+
+int *pnStudengCount = NULL;
 ```
 
 
 
 ## * scanf从标准输入设备格式化到指定的内存地址上
+
 * ``scanf(%d, &n)`` ,%d意思是存入的字符是整形(int),&n是取变量n的地址
 
 * 假设我设置一个变量的值为999，则它对应的16进制是3e7。而它在系统中储存的方式是E7 03 00 00。读法是从右往左读，但每两个相邻的数字却是从左往右读。
@@ -103,6 +109,7 @@ return 0;
  1.在微软下它做了一个<span style="color: rgb(255, 76, 0);">_int64</span>,这才是long int 
 
 * 下面表示是一个long int 类型的常量。！！！注意如果不在末尾加L就表示的是int 类型的常量，int类型的常量太大了就会装不下，也就是会溢出
+ 
  ![Img](./FILES/4.md/img-20230506164203.png)
 
 
