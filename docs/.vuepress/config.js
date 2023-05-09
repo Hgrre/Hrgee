@@ -37,18 +37,15 @@ module.exports = {
                 collapsable: true, // 是否折叠
                 children: [
                 { title: "python笔记", path: "/handbook/python笔记" }
-                // { title: "博客搭建", path: "/handbook/3" }
-                ],
+                    ],
                 },
-
                 {
                 title: "Linux基础",
                 path: '/handbook/Linux笔记',
                 collapsable: true, // 是否折叠
                 children: [
                 { title: "linux笔记", path: "/handbook/Linux笔记" }
-                // { title: "博客搭建", path: "/handbook/3" }
-                ],
+                    ],
                 },
                 {
                 title: "渗透",
@@ -56,8 +53,7 @@ module.exports = {
                 collapsable: true, // 是否折叠
                 children: [
                 { title: "", path: "/handbook/sql" }
-                // { title: "博客搭建", path: "/handbook/3" }
-                ],
+                    ],
                 },
                 {
                 title: "逆向",
@@ -65,8 +61,7 @@ module.exports = {
                 collapsable: true, // 是否折叠
                 children: [
                 { title: "", path: "/handbook/C笔记" }
-                // { title: "博客搭建", path: "/handbook/3" }
-                ],
+                    ],
                 },
             ]
         }
