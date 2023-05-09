@@ -88,7 +88,7 @@ heros.append(6)
 
 **例如：**
 
-![Img](./FILES/2.md/img-20230401203702.png)`
+![Img](https://rtyu-1317440738.cos.ap-guangzhou.myqcloud.com/202305091957408.webp)
 
 
 
@@ -96,7 +96,10 @@ heros.append(6)
 当然使用extend()方法可以连续在原列表里的最后一个元素添加多个元素
 
 **例如：**
-![Img](./FILES/2.md/img-20230401204724.png)
+
+![Img](https://rtyu-1317440738.cos.ap-guangzhou.myqcloud.com/202305091958250.webp)
+
+
 
 
 在任意位置添加数据或插入元素可用insert()方法
@@ -223,7 +226,8 @@ print(a*3)
 **3.嵌套列表（二维列表）**
 例如：
 
-![Img](./FILES/2.md/img-20230402221211.png)
+![Img](https://rtyu-1317440738.cos.ap-guangzhou.myqcloud.com/202305091958105.webp)
+
 
 
 
