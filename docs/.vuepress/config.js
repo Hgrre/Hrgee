@@ -52,7 +52,7 @@ module.exports = {
                 path: '/handbook/sql',
                 collapsable: true, // 是否折叠
                 children: [
-                { title: "", path: "/handbook/sql" }
+                { title: "SQL注入", path: "/handbook/sql" }
                     ],
                 },
                 {
@@ -60,7 +60,7 @@ module.exports = {
                 path: '/handbook/C笔记',
                 collapsable: true, // 是否折叠
                 children: [
-                { title: "", path: "/handbook/C笔记" }
+                { title: "C语言笔记", path: "/handbook/C笔记" }
                     ],
                 },
             ]
