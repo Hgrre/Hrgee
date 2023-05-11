@@ -1,8 +1,9 @@
 # 正则表达式
-![](https://rtyu-1317440738.cos.ap-guangzhou.myqcloud.com/202305111136758.webp)
+![Img](https://rtyu-1317440738.cos.ap-guangzhou.myqcloud.com/202305111157958.webp)
 
 ```PHP
 <?php
+php中使用正则规则一定要加代表正则的标识符`//`
 preg_match_all (正则表达式、匹配字符串、匹配到的东西放入数组)
 # 返回匹配到的次数
  
