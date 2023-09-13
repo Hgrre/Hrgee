@@ -63,6 +63,26 @@ module.exports = {
                 { title: "C语言笔记", path: "/handbook/C笔记" }
                     ],
                 },
+                 {
+                title: "网络通讯基础",
+                path: '/handbook/NA',
+                collapsable: true, // 是否折叠
+                children: [
+                { title: "NA基础", path: "/handbook/NA" }
+                    ],
+                },
+                {
+                title: "操作系统",
+                path: '/handbook/Widows',
+                collapsable: true, // 是否折叠
+                children: [
+                { title: "Windows命令", path: "/handbook/Windows" },
+                { title: "Windows应急响应", path: "/handbook/应急响应" },
+                { title: "Linux命令", path: "/handbook/Windows" }
+
+                    ],
+                },
             ]
         }
     }
+      
