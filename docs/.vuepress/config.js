@@ -16,8 +16,8 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 是否折叠
                 children: [
-                { title: "博客介绍", path: "/" }
-                ]
+                    { title: "博客介绍", path: "/" }
+                    ]
                 },
                 {
                 title: "CTF-WP",
@@ -29,7 +29,7 @@ module.exports = {
                     // { title: "流量分析", path: "/handbook/流量分析" },
                     // { title: "web", path: "/handbook/web" },
                     // { title: "", path: "/handbook/5" },
-                ],
+                    ],
                 },
                 {
                 title: "Python基础",
@@ -37,7 +37,7 @@ module.exports = {
                 collapsable: true, // 是否折叠
                 children: [
                     { title: "python笔记", path: "/handbook/python笔记" }
-                ],
+                    ],
                 },
                 {
                 title: "Linux基础",
@@ -45,7 +45,7 @@ module.exports = {
                 collapsable: true, // 是否折叠
                 children: [
                     { title: "linux笔记", path: "/handbook/Linux笔记" }
-                ],
+                    ],
                 },
                 {
                 title: "渗透",
@@ -53,7 +53,7 @@ module.exports = {
                 collapsable: true, // 是否折叠
                 children: [
                     { title: "SQL注入", path: "/handbook/sql" }
-                ],
+                    ],
                 },
                 {
                 title: "逆向",
@@ -61,7 +61,7 @@ module.exports = {
                 collapsable: true, // 是否折叠
                 children: [
                     { title: "C语言笔记", path: "/handbook/C笔记" }
-                ],
+                    ],
                 },
                 {
                 title: "网络通讯基础",
@@ -69,7 +69,7 @@ module.exports = {
                 collapsable: true, // 是否折叠
                 children: [
                     { title: "NA基础", path: "/handbook/NA" }
-                ],
+                    ],
                 },
                 {
                 title: "操作系统",
