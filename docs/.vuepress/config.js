@@ -73,13 +73,10 @@ module.exports = {
                 },
                 {
                 title: "操作系统",
-                path: '/handbook/Widows',
+                path: '/handbook/windows',
                 collapsable: true, // 是否折叠
                 children: [
-                { title: "Windows命令", path: "/handbook/Windows" },
-                { title: "Windows应急响应", path: "/handbook/应急响应" },
-                { title: "Linux命令", path: "/handbook/Windows" }
-
+                { title: "windows命令", path: "/handbook/windows" },
                     ],
                 },
             ]
