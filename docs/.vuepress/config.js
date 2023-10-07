@@ -84,7 +84,7 @@ module.exports = {
                 path: '/handbook/JS',
                 collapsable: true, // 是否折叠
                 children: [
-                    { title: "JS笔记", path: "/handbook/JS" },
+                    { title: "JS基础", path: "/handbook/JS" },
                 ],
             },
         ]
