@@ -445,6 +445,9 @@ select * from stu  union select user_id,user,password,4 from dvwa.users (库名�
 ```
 
 * **information_scheama 系统自带的数据库 （每一个mysql数据库里面都会 有这个系统数据库 mysql5版本以上才有的）**
+* **数据库**
+* **表名**
+* **字段名**
 
 ```
 select column_name from information_schema.columns where table_schema = 'dvwa' and table_name ='users'
