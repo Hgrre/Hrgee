@@ -82,10 +82,11 @@ module.exports = {
             {
                 title: "Web渗透",
                 path: '/handbook/JS',
+                path: '/handbook/PHP',
                 collapsable: true, // 是否折叠
                 children: [
                     { title: "JS基础", path: "/handbook/JS" },
-                    { title: "PHP", path: "/handbook/PHP" },
+                    { title: "PHP编程", path: "/handbook/PHP" },
                 ],
             },
         ]
