@@ -79,6 +79,14 @@ module.exports = {
                     { title: "windows命令", path: "/handbook/windows" },
                 ],
             },
+            {
+                title: "Web渗透",
+                path: '/handbook/JS',
+                collapsable: true, // 是否折叠
+                children: [
+                    { title: "JS笔记", path: "/handbook/JS" },
+                ],
+            },
         ]
     }
 }
