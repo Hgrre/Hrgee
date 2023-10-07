@@ -85,6 +85,7 @@ module.exports = {
                 collapsable: true, // 是否折叠
                 children: [
                     { title: "JS基础", path: "/handbook/JS" },
+                    { title: "PHP", path: "/handbook/PHP" },
                 ],
             },
         ]
