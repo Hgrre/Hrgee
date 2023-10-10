@@ -399,6 +399,6 @@ PHP中代码执行函数:
 	call_user_func()
 	call_user_func_array()
 	array_fileter()
-	uas
+	uasort()
 ```
 
