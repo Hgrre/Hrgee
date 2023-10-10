@@ -290,3 +290,115 @@ $stu_xm -> setname("小明");
 
 
 
+## Mysql数据库操作
+
+* **PHP 对Mysql数据库支持是最好的！**
+* **mysql_connect();**
+* **mysqli_connect();**
+* **PDO()**
+* **mysql的端口是3306**
+
+#### 操作数据库的八个步骤:
+
+```
+第一步：链接数据库
+第二步：检测数据库连接是否成功
+第三步：选择数据库
+第四步：设置字符集编码格式
+第五步：编写sql语句
+第六步：执行sql语句
+第七步：解析结果集
+第八步：关闭资源与结果集
+```
+
+####  连接数据库
+
+![image-20231010171345804](https://rtyu-1317440738.cos.ap-guangzhou.myqcloud.com/image-20231010171345804.webp)
+
+```
+<!-- 连接数据库 -->
+
+<?php
+    $con = @mysqli_connect('127.0.0.1','root','root','mysql');
+    if($con){
+        echo "连接成功";
+    }else{
+        echo "连接失败";
+    
+    }
+
+    mysqli_select_db($con,'user');
+    mysqli_set_charset($con,'utf-8');
+    $sql = 'SELECT * from user';
+    if(mysqli_query($con,$sql)){
+        echo "<br>执行成功";
+    }else{
+        echo "<br>执行失败";
+    }
+?>
+```
+
+####  显示所有结果的数据
+
+![image-20231010173421955](https://rtyu-1317440738.cos.ap-guangzhou.myqcloud.com/image-20231010173421955.webp) 
+
+```
+<!-- 连接数据库 -->
+
+<?php
+    $con = @mysqli_connect('127.0.0.1','root','root','mysql');
+    if($con){
+        echo "连接成功";
+    }else{
+        echo "连接失败";
+    }
+
+    mysqli_select_db($con,'user');      #选择数据库
+    mysqli_set_charset($con,'utf-8');   # 设置编码模式
+    $sql = 'SELECT * from user';        #编写sql语句
+    $res = mysqli_query($con, $sql);    #执行sql语句，并将select得到集合返回
+    if(mysqli_query($con,$sql)){
+        echo "<br>执行成功<hr>";
+
+    while(true){
+        $data = mysqli_fetch_assoc($res);       #从操作集中提取数据
+        if($data){
+            print_r($data);
+            print('<br>');
+            echo $data['name'];
+            print('<br>');
+        }else{
+            break;
+        }
+    }
+    mysqli_close($con);   #关闭连接
+    mysqli_free_result($res);  # 释放结果集
+    }else{
+        echo "<br>执行失败";
+    }
+?>
+```
+
+## 高危函数
+
+```
+PHP中命令执行函数:
+	system()
+	exec()
+	shell_exec()
+	ocntl_exec()
+	popen()
+	proc_popen()
+	passthru()
+PHP中代码执行函数:
+	eval()
+	assert()
+	preg_replace()
+	creata_funnction()
+	array_map()
+	call_user_func()
+	call_user_func_array()
+	array_fileter()
+	uas
+```
+
