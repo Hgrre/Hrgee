@@ -87,7 +87,7 @@ module.exports = {
                     { title: "JS基础", path: "/handbook/JS" },
                     { title: "PHP编程", path: "/handbook/PHP" },
                     { title: "信息收集", path: "/handbook/信息收集" },
-                    { title: "Python笔记", path: "/handbook/Python" }
+                    { title: "Python笔记", path: "/handbook/Python笔记" }
                 ],
             },
         ]
