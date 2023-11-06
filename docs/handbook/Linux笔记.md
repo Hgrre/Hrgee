@@ -52,3 +52,8 @@
 
 ![Img](https://rtyu-1317440738.cos.ap-guangzhou.myqcloud.com/202305091956720.webp)
 
+## 备份文件
+
+```
+.git .svn .swp .svn .~ .bak .bash_history
+```
