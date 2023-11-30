@@ -159,3 +159,162 @@ from 模块名 import 函数名
 from print_f import print_func		# 导入模块的指定函数
 ```
 
+## 文件I/O流
+
+#### 文件流
+
+```python
+fo = open('D:\\foot.txt','w+')				# r 为读 w 为写 a 为追加
+fo.write( "你好啊")						 #写入内容
+fo.close()								   # 关闭文件流
+
+fo = open('D:\\foot.txt','r+')			   # r 为读 w 为写 a 为追加
+print(fo.readline())					   # 读取一行内容
+print(fo.read())						   # 读取全部
+fo.close()
+
+# with open
+with open("python.txt","a+") as fi:
+    fi.write("Sometimes i get high , sometimes i get low!")
+```
+
+## 小作业
+
+**任意写一个python 的`upper()函数`, 将一个字符串中所有的小写字母变成大写字母**
+
+![image-20231106112740564](https://rtyu-1317440738.cos.ap-guangzhou.myqcloud.com/image-20231106112740564.webp) 
+
+**源码**：
+
+```python
+#  方法1 ：字符串小写转大写
+a = wo ai pan yi hua"
+print(s.upper())
+
+
+# 方法2：字符串小写转大写
+def upper_(str):
+    for c in str:
+        if c >='a' and c <='z':
+            print(chr(ord(c)-32), end='')
+            
+upper_('abcdefg')
+
+
+# 字符串大写转小写
+a = "WO AI PAN YI HUA"
+print(a.lower())"
+```
+
+ **任意写一个列表查找值并返回下标的函数**
+
+* **源码**
+
+```python
+list = ['赵云','诸葛亮','曹操','孙权','赵云']
+def test(str):
+    i = 0
+    list_ = []
+    for n in list:
+        if n==str:
+            list_.append(i)
+        i+=1
+    return  list_
+print(test('赵云'))
+
+# 输出结果是：[0, 4]
+```
+
+**`输出结果是：[0, 4]`**
+
+  **任意写一个列表值替换的函数**
+
+```python
+list = ['赵云','诸葛亮','曹操','孙权','赵云']
+def test(str,str_1):
+    i = 0
+    for n in list:			#  可用这个 range(len(list)):
+        if n == str:
+            list[i] = str_1
+        i+= 1
+    return list
+print(test('赵云','小小白'))
+
+# 输出结果是 ：['小小白', '诸葛亮', '曹操', '孙权', '小小白']
+```
+
+**`输出结果是 ：['小小白', '诸葛亮', '曹操', '孙权', '小小白']`**
+
+## 面向对象编程
+
+```python
+class stu：   # 定义一个类
+
+	def _init_(self, name, age):
+        self.name = name
+        self.age = age
+    def getname(self):
+        print ("name:",self.anme)
+        
+    def stename(self,name):
+        self.name = name
+        
+class xm(stu):			# 继承stu类
+    _money = 100.1
+    def _init_(self,name,age,phone):
+        stu._init_(self,name,age)
+        self.phone = phone
+    def setname(self,name):
+        self.name = name
+        print(self.name)
+        
+x = xm("小明",16,123456)
+x.getname()
+x.setname()
+```
+
+## 多线程
+
+* **多线程类似于同时执行多个不同程序，多线程运行有如下优点：**
+
+  **1.使用线程可以把占据长时间的程序中的任务放到后台去处理。**
+
+  **2.用户界面可以更加吸引人，这样比如用户点击了一个按钮去触发某些事件的处理，可以弹出一个进度条来显示处理的进度**
+
+  **3.程序的运行速度可能加快**
+
+  **4.在一些等待的任务实现上如用户输入、文件读写和网络收发数据等，线程就比较有用了。在这种情况下我们可以释放一些珍贵的资源如内存占用等等。**
+
+```python
+#  第一种方法
+import threading   # 导入线程包
+
+def print_list():
+    fofr x in range(1000):
+        print("你好%d--"%x)
+threading.Thread(target=print_list).start()
+threading.Thread(target=print_list).start()
+# threading.Thread(target=print_list).start()
+# 传递给线程函数得参数，他必须是个 tuple 类型
+
+# 第二种方式
+import threading
+
+class Thread(threading.Thread):
+    def _init_(self):
+        threading.Thread._init_(self)
+    
+    def run(self):
+        print_list()
+def print_list():
+
+```
+
+* **线程在执行过程中与进程还是有区别的。每个独立的进程有一个程序运行的入口、顺序执行序列和程序的出口。但是线程不能够独立执行，必须依存在应用程序中，由应用程序提供多个线程执行控制。**
+
+* **每个线程都有他自己的一组CPU寄存器，称为线程的上下文，该上下文反映了线程上次运行该线程的CPU寄存器的状态。指令指针和堆栈指针寄存器是线程上下文中两个最重要的寄存器，线程总是在进程得到上下文中运行的，这些地址都用于标志拥有线程的进程地址空间中的内存。**
+
+- **线程可以被抢占（中断）。**
+- **在其他线程正在运行时，线程可以暂时搁置（也称为睡眠） -- 这就是线程的退让。**
+
+ 
