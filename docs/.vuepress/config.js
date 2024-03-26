@@ -92,10 +92,10 @@ module.exports = {
             },
             {
                 title: "新web",
-                path: '/handbook/web',
+                path: '/handbook/1',
                 collapsable: true, // 是否折叠
                 children: [
-                    { title: "top10漏洞", path: "/handbook/web" },
+                    { title: "top10漏洞", path: "/handbook/1" },
                 ],
             },
         ]
