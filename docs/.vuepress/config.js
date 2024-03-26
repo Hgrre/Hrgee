@@ -90,6 +90,14 @@ module.exports = {
                     { title: "Python", path: "/handbook/Python" }
                 ],
             },
+            {
+                title: "新web",
+                path: '/handbook/web',
+                collapsable: true, // 是否折叠
+                children: [
+                    { title: "top10漏洞", path: "/handbook/web" },
+                ],
+            },
         ]
     }
 }
