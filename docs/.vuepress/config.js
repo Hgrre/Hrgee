@@ -91,7 +91,7 @@ module.exports = {
                 ],
             },
             {
-                title: "web",
+                title: "Web",
                 path: '/handbook/web',
                 collapsable: true, // 是否折叠
                 children: [
